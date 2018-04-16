@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Pages.Sign_On_Page">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="12,12,12,12">
+            <Image x:Name="logo" 
+                       HorizontalOptions="Center"
+                       Source="icon.png"/>
+            <Entry x:Name="clientLogin"
+                   HorizontalOptions="CenterAndExpand"
+                   Keyboard="Email"
+                   Placeholder="Введите почту"/> <!--перевод-->
+            <BoxView HorizontalOptions="CenterAndExpand"
+                     Color="Gray"
+                     HeightRequest="1"/>
+            <Entry x:Name="clientPassword"
+                   HorizontalOptions="CenterAndExpand"
+                   IsPassword="True"
+                   Placeholder="Введите пароль"/> <!--перевод-->
+            <BoxView HorizontalOptions="CenterAndExpand"
+                     Color="Gray"
+                     HeightRequest="1"/>
+            <Entry x:Name="clientPasswordRepeat"
+                   HorizontalOptions="CenterAndExpand"
+                   IsPassword="True"
+                   Placeholder="Введите пароль ещё раз"/> <!--перевод-->
+            <Button x:Name="registrationButton"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="Регистрация"/> <!--перевод-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Pages.Login_Page">
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="12,12,12,12">
+            <Image x:Name="logo" 
+                       HorizontalOptions="Center"
+                       Source="icon.png"/>
+            <Label x:Name="companyLabel"
+                   HorizontalOptions="CenterAndExpand"
+                   Text="Привет живая открытка!"/> <!-- добавить выгрузку текста из файла для перевода -->
+            <Entry x:Name="loginEntry"
+                   HorizontalOptions="CenterAndExpand"
+                   Keyboard="Email"
+                   Placeholder="Введите логин"/> <!--перевод-->
+            <Entry x:Name="passwordLabel"
+                   HorizontalOptions="CenterAndExpand"
+                   Placeholder="Введите пароль"
+                   IsPassword="True"/> <!--перевод-->
+            <Label HorizontalOptions="CenterAndExpand"
+                   Text="или"/> <!--перевод-->
+            <BoxView HorizontalOptions="CenterAndExpand"
+                     Color="Gray"
+                     HeightRequest="1"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Image Source="google_plus_logo.png"/>
+                <Image Source="vk_logo.png"/>
+                <Image Source="fb_logo.png"/>
+            </StackLayout>
+            <Button x:Name="loginButton"
+                    Text="Вход"
+                    HorizontalOptions="CenterAndExpand"/> <!--перевод-->
+            <Button x:Name="singInButton"
+                    Text="Регистрация"
+                    HorizontalOptions="CenterAndExpand"/> <!--перевод-->
+            <Button x:Name="forgotPassword"
+                    Text="Забыли пароль"
+                    HorizontalOptions="CenterAndExpand"/> <!--перевод-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

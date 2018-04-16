@@ -4,8 +4,8 @@
              xmlns:local="clr-namespace:App1"
              x:Class="App1.MainPage">
 
-	<Label Text="Hello World" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout>
+        <Label Text="HELLO MAIN PAGE"/>
+    </StackLayout>
 
 </ContentPage>

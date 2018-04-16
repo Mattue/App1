@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:App1.Controls"
+             x:Class="App1.Pages.Registration_Page">
+    
+    <ContentPage.Content>
+        <StackLayout Padding="12,12,12,12">
+            <Image x:Name="logo" 
+                       HorizontalOptions="Center"
+                       Source="icon.png"/>
+            <Label Text="Для регистрации нам нужны некоторые ваши данные."
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"/> <!--перевод-->
+            <BoxView HorizontalOptions="CenterAndExpand"
+                     Color="Gray"
+                     HeightRequest="1"/>
+            <Entry x:Name="clientName"
+                   HorizontalOptions="CenterAndExpand"
+                   Placeholder="Введите имя"/> <!--перевод-->
+            <Entry x:Name="clientSurname"
+                   HorizontalOptions="CenterAndExpand"
+                   Placeholder="Введите фамилию"/> <!--перевод-->
+            <Entry x:Name="clientPatronymic"
+                   HorizontalOptions="CenterAndExpand"
+                   Placeholder="Введите отчетсво"/>
+            <Entry x:Name="clientCity"
+                   HorizontalOptions="CenterAndExpand"
+                   Placeholder="Ваш город"/> <!--перевод-->
+            <Label x:Name="conditions" 
+                   HorizontalOptions="CenterAndExpand"
+                   Text="Чтобы прочитать условия пользования сервисом нажми на меня"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Blue"> <!--перевод-->
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ReadConditions" NumberOfTapsRequired="1"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <controls:CheckBox x:Name="agreeCheckBox"
+                               Text="С условиями пользования сервисом - согласен."/>
+            <Button x:Name="saveButton"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="Завершить регистрацию"/> <!--перевод-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
