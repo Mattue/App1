@@ -47,5 +47,7 @@
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
 	<string>App1</string>
+	<key>XSLaunchImageAssets</key>
+	<string>Resources/Assets.xcassets/LaunchImages.launchimage</string>
 </dict>
 </plist>
