@@ -11,16 +11,10 @@
                    HorizontalOptions="CenterAndExpand"
                    Keyboard="Email"
                    Placeholder="Введите почту"/> <!--перевод-->
-            <BoxView HorizontalOptions="CenterAndExpand"
-                     Color="Gray"
-                     HeightRequest="1"/>
             <Entry x:Name="clientPassword"
                    HorizontalOptions="CenterAndExpand"
                    IsPassword="True"
                    Placeholder="Введите пароль"/> <!--перевод-->
-            <BoxView HorizontalOptions="CenterAndExpand"
-                     Color="Gray"
-                     HeightRequest="1"/>
             <Entry x:Name="clientPasswordRepeat"
                    HorizontalOptions="CenterAndExpand"
                    IsPassword="True"

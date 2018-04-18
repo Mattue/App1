@@ -25,6 +25,26 @@ namespace App1.Pages
             {
                 App.Current.MainPage = new MainPage();
             };
+
+            forgotPasswordButton.Clicked += (s, e) =>
+            {
+                Navigation.PushAsync(new Pages.Restore_Password());
+            };
         }
-	}
+
+        private void GoogleTapped()
+        {
+            DisplayAlert("Google", "Log in by google", "OK");
+        }
+
+        private void VkTapped()
+        {
+            DisplayAlert("VK", "Log in by vk", "OK");
+        }
+
+        private void FbTapped()
+        {
+            DisplayAlert("FB", "Log in by FB", "OK");
+        }
+    }
 }

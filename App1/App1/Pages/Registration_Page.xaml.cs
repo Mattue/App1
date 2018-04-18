@@ -20,6 +20,12 @@ namespace App1.Pages
             {
                 App.Current.MainPage = new MainPage();
             };
+
+            clientSityPicker.Items.Add("Омск");
+            clientSityPicker.Items.Add("Москва");
+            clientSityPicker.Items.Add("Питер");
+
+            clientSityPicker.SelectedIndex = 0;
         }
 
         private void ReadConditions()
