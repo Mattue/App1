@@ -33,5 +33,10 @@ namespace App1.Pages
             DisplayAlert("Условия", "Наши условия", "Прочитал");
         }
 
+        private bool IsChecked()
+        {
+            return agreeCheckBox.IsChecked;
+        }
+
     }
 }

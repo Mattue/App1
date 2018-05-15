@@ -44,10 +44,12 @@
                 </Label.GestureRecognizers>
             </Label>
             <controls:CheckBox x:Name="agreeCheckBox"
-                               Text="С условиями пользования сервисом - согласен."/>
+                               Text="С условиями пользования сервисом - согласен."
+                               />
             <Button x:Name="saveButton"
                     HorizontalOptions="CenterAndExpand"
-                    Text="Завершить регистрацию"/> <!--перевод-->
+                    Text="Завершить регистрацию"
+                    IsEnabled="{Binding Source={x:Reference Name=agreeCheckBox}, Path=IsChecked}"/> <!--перевод-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
